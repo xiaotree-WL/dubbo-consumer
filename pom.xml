@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.dubbo.nlp</groupId>
+	<artifactId>dubboconsumer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>dubboconsumer</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>com.techwolf.oceanus</groupId>
+		<artifactId>oceanus-parent</artifactId>
+		<version>2.0.2</version>
+	</parent>
+
+	<properties>
+		<resource.exclude>-</resource.exclude>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>io.gsf</groupId>
+			<artifactId>gsf-service-dubbo-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.gsf</groupId>
+			<artifactId>gsf-trace-client-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.gsf</groupId>
+			<artifactId>gsf-config-client-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.gsf</groupId>
+			<artifactId>gsf-monitor-log-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.techwolf.oceanus</groupId>
+			<artifactId>oceanus-service-chatbot-api</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

@@ -1,0 +1,16 @@
+server:
+   port: 8090
+spring:
+  application:
+    name: dubboconsumer
+
+dubbo:
+  application:
+    id: dubbo-consumer
+    name: dubbo-consumer
+  protocol:
+    id: dubbo-protocol
+    name: dubbo
+  registry:
+    id: zk-registry
+    address: zookeeper://192.168.1.42:2181
